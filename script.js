@@ -21,11 +21,11 @@ window.addEventListener('DOMContentLoaded', () => {
                     span.classList.add('fade');
                 }, (idx + 1) * 100)
             })
-        }, 2000)
+        }, 3000)
 
         setTimeout(() => {
             splash.style.top = '-100vh'
-        }, 4500)
+        }, 4300)
     })
 });
 // --------- End Of Splash --------- 
