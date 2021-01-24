@@ -5,8 +5,31 @@
 }
 
 body {
-  background-color: #000;
   font-family: "poppins", sans-serif;
+}
+
+.splash {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+}
+
+.splash .splash-header {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #fff;
+}
+
+.splash .splash-header .header-text {
+  position: relative;
+  display: inline-block;
+  bottom: -20px;
+  opacity: 0;
 }
 /*# sourceMappingURL=style.css.map */
