@@ -18,21 +18,32 @@ body {
 	height: 100vh;
 	background-color: #000;
 	// transition: 1s;
-    
-    & .splash-header {
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%); // Brings Everything To The Center
-        color: #fff;
 
-        & .header-text {
-            position: relative;
-            display: inline-block;
-            bottom: -20px;
-            opacity: 0
-        }
-    }
+	.splash-header {
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%); // Brings Everything To The Center
+		color: #fff;
+
+		& .header-text {
+			position: relative;
+			display: inline-block;
+			bottom: -20px;
+			opacity: 0;
+
+			&.active {
+				bottom: 0;
+				opacity: 1;
+				transition: ease-in-out 0.7s;
+			}
+
+			&.fade {
+				bottom: 150px;
+				opacity: 0;
+				transition: ease-in-out 0.7s;
+			}
+		}
+	}
 }
-
 // End Of Splash

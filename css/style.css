@@ -32,4 +32,16 @@ body {
   bottom: -20px;
   opacity: 0;
 }
+
+.splash .splash-header .header-text.active {
+  bottom: 0;
+  opacity: 1;
+  transition: ease-in-out 0.7s;
+}
+
+.splash .splash-header .header-text.fade {
+  bottom: 150px;
+  opacity: 0;
+  transition: ease-in-out 0.7s;
+}
 /*# sourceMappingURL=style.css.map */
