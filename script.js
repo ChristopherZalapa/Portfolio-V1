@@ -24,8 +24,9 @@ window.addEventListener('DOMContentLoaded', () => {
         }, 3000)
 
         setTimeout(() => {
-            splash.style.top = '-100vh'
+            splash.style.right = '-100%'
         }, 4300)
     })
 });
 // --------- End Of Splash --------- 
+
