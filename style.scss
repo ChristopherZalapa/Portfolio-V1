@@ -6,6 +6,8 @@
 
 body {
 	font-family: "poppins", sans-serif;
+	height: 100vh;
+	// overflow: hidden;
 }
 
 // Splash
@@ -50,5 +52,26 @@ body {
 // End Of Splash
 
 // Home Page Transition
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
 
+	& .project-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		height: 100vh;
+	
+		img {
+			height: 350px;
+			width: 550px;
+			
+		}
+	}
+
+}
 // End Of Home Page Transition
