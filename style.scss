@@ -64,23 +64,32 @@ body {
 	position: relative;
 	left: -55%;
 	width: 55%;
+	height: 100vh;
+	animation: slide-perm 2s forwards;
 
 	&.header {
 		position: relative;
 		top: 20px;
 		width: 100%;
 		height: 6rem;
-		
+		opacity: 0;
+
+		&.header-logo {
+			position: absolute;
+			bottom: 0;
+			left: 18%;
+		}
 	}
 
 }
 
 .navbar {
-	position: fixed;
+	position: absolute;
 	display: flex;
+	right: 0;
 	top: 0;
-	width: 100%;
-	height: 60px;
+	width: 50%;
+	justify-content: space-around;
 
 }
 
@@ -98,4 +107,40 @@ section {
 	}
 	
 }
-// End Of Home Page Transition
+
+.active {
+	position: relative;
+	top: 0;
+	opacity: 1;
+	transition: 0.5s;
+}
+
+@keyframes slide {
+	0% {
+		left: -100%;
+	}
+	25% {
+		left: -100%;
+	}
+	50% {
+		left: 0;
+	}
+	100% {
+		left: 100%;
+	}
+}
+
+@keyframes slide-perm {
+	0% {
+		left: -100%;
+	}
+	25% {
+		left: -100%;
+	}
+	75% {
+		left: 0;
+	}
+	100% {
+		left: 0;
+	}
+}
