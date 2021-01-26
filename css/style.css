@@ -7,6 +7,7 @@
 body {
   font-family: "poppins", sans-serif;
   height: 100vh;
+  overflow: hidden;
 }
 
 .splash {
@@ -48,6 +49,35 @@ body {
   transition: ease-in-out 1s;
 }
 
+.smooth-scroll-container {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.home-left {
+  position: relative;
+  left: -55%;
+  width: 55%;
+}
+
+.home-left.header {
+  position: relative;
+  top: 20px;
+  width: 100%;
+  height: 6rem;
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100%;
+  height: 60px;
+}
+
 section {
   display: flex;
   flex-direction: column;
@@ -56,15 +86,7 @@ section {
   height: 100vh;
 }
 
-section .project-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-}
-
-section .project-container img {
+section img {
   height: 350px;
   width: 550px;
 }
