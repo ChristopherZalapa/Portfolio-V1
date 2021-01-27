@@ -8,6 +8,7 @@ body {
   font-family: "poppins", sans-serif;
   height: 100vh;
   overflow: hidden;
+  background-color: black;
 }
 
 .splash {
@@ -63,17 +64,17 @@ body {
   width: 55%;
   height: 100vh;
   animation: slide-perm 2s forwards;
+  background-color: #fff;
 }
 
-.home-left.header {
+.home-left .header {
   position: relative;
   top: 20px;
   width: 100%;
   height: 6rem;
-  opacity: 0;
 }
 
-.home-left.header.header-logo {
+.home-left .header .header-logo {
   position: absolute;
   bottom: 0;
   left: 18%;
@@ -88,17 +89,26 @@ body {
   justify-content: space-around;
 }
 
-section {
+.navbar ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  list-style: none;
   width: 100%;
-  height: 100vh;
+  justify-content: center;
 }
 
-section img {
-  height: 350px;
-  width: 550px;
+.navbar li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar li a:hover {
+  color: gray;
+  transition: 0.2s ease-in;
 }
 
 .active {
