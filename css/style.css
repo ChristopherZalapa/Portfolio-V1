@@ -180,5 +180,14 @@ section img {
   .navbar .navbar-toggler span::after {
     transform: translateY(5px);
   }
+  .navbar .navbar-toggler .open-navbar-toggler span {
+    background-color: transparent;
+  }
+  .navbar .navbar-toggler .open-navbar-toggler span::before {
+    transform: translateY(0px) rotate(45deg);
+  }
+  .navbar .navbar-toggler .open-navbar-toggler span::after {
+    transform: translateY(-3px) rotate(-45deg);
+  }
 }
 /*# sourceMappingURL=style.css.map */
