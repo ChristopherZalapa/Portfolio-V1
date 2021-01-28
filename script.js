@@ -47,25 +47,3 @@ function navbarLinkClick() {
         navbarToggler.click();
     }
 }
-
-
-
-// --------- End Of Splash --------- 
-
-let header = document.querySelector('.header');
-let links = Array.from(document.querySelectorAll('.link'));
-
-function animate () {
-    
-    setTimeout(() => {
-        header.classList.add('active');
-    }, 7000);
-
-    links.forEach((link, idx) => {
-        setTimeout(() => {
-            link.classList.add('active');
-        }, (idx * 200) + 2500)
-    })
-}
-
-animate();
