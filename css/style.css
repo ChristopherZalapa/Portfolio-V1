@@ -57,50 +57,69 @@ body {
   scroll-snap-type: y mandatory;
 }
 
-.header {
-  position: fixed;
-  top: 0.5rem;
-  left: 3rem;
-  width: 100%;
+nav {
+  height: 2rem;
 }
 
-.header .header-logo {
+nav #check {
+  display: none;
+}
+
+nav label #btn,
+nav #cancel {
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+nav div {
+  position: absolute;
+  font-size: 2.5rem;
   font-weight: lighter;
-  font-size: 1.5rem;
+  width: fit-content;
+  top: 17px;
+  left: 12%;
 }
 
-.header .navbar {
-  position: fixed;
-  display: flex;
-  top: 0;
-  width: 100%;
-  justify-content: space-around;
+nav ul {
+  float: right;
+  margin-right: 25px;
 }
 
-.header .navbar ul {
-  display: flex;
+nav li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 15px;
+}
+
+nav a {
+  position: relative;
   list-style: none;
-  width: 100%;
-  justify-content: center;
-}
-
-.header .navbar li {
-  margin: 0 1rem;
-  padding: 1rem;
-}
-
-.header .navbar li .logo {
-  justify-content: start;
-}
-
-.header .navbar li a {
   text-decoration: none;
+  font-size: 1.2rem;
   color: #000;
+  padding: 5px 0;
+  font-weight: bold;
 }
 
-.header .navbar li a:hover {
-  color: gray;
-  transition: 0.2s ease-in;
+nav a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: #000;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s linear;
+}
+
+nav a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 section {
@@ -115,5 +134,31 @@ section {
 section img {
   height: 350px;
   width: 550px;
+}
+
+@media (max-width: 1118px) {
+  .header-logo {
+    left: 8%;
+  }
+}
+
+@media (max-width: 944px) {
+  .header-logo {
+    left: 6%;
+    top: 20px;
+    width: 130px;
+  }
+  ul li a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 860px) {
+  label #btn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+  }
 }
 /*# sourceMappingURL=style.css.map */

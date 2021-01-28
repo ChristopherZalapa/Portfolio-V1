@@ -3,26 +3,6 @@ let splash = document.querySelector('.splash');
 let splashHeader = document.querySelector('.splash-header');
 let headerText = document.querySelectorAll('.header-text');
 
-// --------- End Of Splash --------- 
-let header = document.querySelector('.header');
-let links = Array.from(document.querySelectorAll('.link'));
-
-function animate () {
-    
-    setTimeout(() => {
-        header.classList.add('active');
-    }, 7000);
-
-    links.forEach((link, idx) => {
-        setTimeout(() => {
-            link.classList.add('active');
-        }, (idx * 200) + 2500)
-    })
-}
-
-animate();
-
-
 window.addEventListener('DOMContentLoaded', () => {
 
     setTimeout(() => {
@@ -48,4 +28,22 @@ window.addEventListener('DOMContentLoaded', () => {
         }, 4300)
     })
 });
+// --------- End Of Splash --------- 
 
+// let header = document.querySelector('.header');
+// let links = Array.from(document.querySelectorAll('.link'));
+
+// function animate () {
+    
+//     setTimeout(() => {
+//         header.classList.add('active');
+//     }, 7000);
+
+//     links.forEach((link, idx) => {
+//         setTimeout(() => {
+//             link.classList.add('active');
+//         }, (idx * 200) + 2500)
+//     })
+// }
+
+// animate();
