@@ -3,6 +3,13 @@ let splash = document.querySelector('.splash');
 let splashHeader = document.querySelector('.splash-header');
 let headerText = document.querySelectorAll('.header-text');
 
+const navbarToggler = document.querySelector('.navbar-toggler');
+const navbarMenu = document.querySelector('.navbar ul');
+console.log(navbarTogglerClick);
+navbarToggler.addEventListener('click', navbarTogglerClick);
+
+
+
 window.addEventListener('DOMContentLoaded', () => {
 
     setTimeout(() => {
@@ -28,6 +35,14 @@ window.addEventListener('DOMContentLoaded', () => {
         }, 4300)
     })
 });
+
+
+
+function navbarTogglerClick() {
+    navbarToggler.classList.toggle('open-navbar-toggler');
+    navbarMenu.classList.toggle('open');
+}
+
 // --------- End Of Splash --------- 
 
 // let header = document.querySelector('.header');

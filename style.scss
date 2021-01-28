@@ -132,7 +132,7 @@ section {
 }
 
 // Responsive Media Queries
-@media (max-width: 767px) {
+@media (max-width: 980px) {
 	.navbar {
 		padding: 0;
 
@@ -178,8 +178,8 @@ section {
 	.navbar .navbar-toggler span,
 	.navbar .navbar-toggler span::before,
 	.navbar .navbar-toggler span::after {
-		display: block;
 		content: '';
+		display: block;
 		background-color: #fff;
 		height: 3px;
 		width: 28px;
