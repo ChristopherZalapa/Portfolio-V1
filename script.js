@@ -3,13 +3,6 @@ let splash = document.querySelector('.splash');
 let splashHeader = document.querySelector('.splash-header');
 let headerText = document.querySelectorAll('.header-text');
 
-const navbarToggler = document.querySelector('.navbar-toggler');
-const navbarMenu = document.querySelector('.navbar ul');
-console.log(navbarTogglerClick);
-navbarToggler.addEventListener('click', navbarTogglerClick);
-
-
-
 window.addEventListener('DOMContentLoaded', () => {
 
     setTimeout(() => {
@@ -36,29 +29,43 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 });
 
+const navbarToggler = document.querySelector(".navbar-toggler");
+const navbarMenu = document.querySelector(".navbar ul");
+const navbarLinks = document.querySelectorAll(".navbar a");
 
+navbarToggler.addEventListener("click", navbarTogglerClick);
 
 function navbarTogglerClick() {
-    navbarToggler.classList.toggle('open-navbar-toggler');
-    navbarMenu.classList.toggle('open');
+    navbarToggler.classList.toggle("open-navbar-toggler");
+    navbarMenu.classList.toggle("open");
 }
+
+navbarLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick));
+
+function navbarLinkClick() {
+    if(navbarMenu.classList.contains("open")) {
+        navbarToggler.click();
+    }
+}
+
+
 
 // --------- End Of Splash --------- 
 
-// let header = document.querySelector('.header');
-// let links = Array.from(document.querySelectorAll('.link'));
+let header = document.querySelector('.header');
+let links = Array.from(document.querySelectorAll('.link'));
 
-// function animate () {
+function animate () {
     
-//     setTimeout(() => {
-//         header.classList.add('active');
-//     }, 7000);
+    setTimeout(() => {
+        header.classList.add('active');
+    }, 7000);
 
-//     links.forEach((link, idx) => {
-//         setTimeout(() => {
-//             link.classList.add('active');
-//         }, (idx * 200) + 2500)
-//     })
-// }
+    links.forEach((link, idx) => {
+        setTimeout(() => {
+            link.classList.add('active');
+        }, (idx * 200) + 2500)
+    })
+}
 
-// animate();
+animate();
