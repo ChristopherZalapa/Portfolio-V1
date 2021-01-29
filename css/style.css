@@ -5,10 +5,9 @@
 }
 
 body {
-  font-family: 'poppins', sans-serif;
-  background-color: gray;
+  font-family: "poppins", sans-serif;
   height: 100vh;
-  color: #333;
+  color: #000;
   overflow: hidden;
 }
 
@@ -100,13 +99,13 @@ section img {
   padding: 0 30px;
   font-size: 22px;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: lighter;
   letter-spacing: 2px;
 }
 
 .navbar a.navbar-brand span {
   font-size: 28px;
-  font-weight: 700;
+  font-weight: normal;
 }
 
 .navbar ul {
@@ -114,22 +113,28 @@ section img {
   list-style: none;
   height: inherit;
   line-height: inherit;
-  padding: 0;
 }
 
 .navbar ul li {
   display: inline-block;
+  position: relative;
 }
 
 .navbar ul li a {
-  display: block;
-  text-align: center;
-  min-width: 120px;
-  padding: 0 30px;
+  position: relative;
+  margin: 1.4rem;
 }
 
-.navbar ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.15);
+.navbar ul li a:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background-color: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
 
 .navbar .navbar-toggler {
@@ -142,7 +147,6 @@ section img {
   }
   .navbar ul li a {
     min-width: 100px;
-    padding: 0 20px;
   }
 }
 
