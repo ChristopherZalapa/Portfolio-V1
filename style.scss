@@ -84,7 +84,7 @@ section {
 	width: 100%;
 	height: 80px;
 	line-height: 80px;
-	font-size: 18px;
+	font-size: 1rem;
 	padding: 0 30px;
 	position: fixed;
 	top: 0;
@@ -100,14 +100,12 @@ section {
 			height: inherit;
 			line-height: inherit;
 			padding: 0 30px;
-			font-size: 22px;
-			text-transform: uppercase;
+			// font-size: 2rem;
 			font-weight: lighter;
 			letter-spacing: 2px;
 
 			span {
-				font-size: 28px;
-				font-weight: normal;
+				font-size: 1.8rem;
 			}
 		}
 	}
@@ -126,7 +124,6 @@ section {
 				position: relative;
 				margin: 1.4rem;
 
-
 				&:after {
 					content: "";
 					position: absolute;
@@ -137,16 +134,15 @@ section {
 					width: 0;
 					background-color: #fff;
 					transition: width 0.3s ease 0s, left 0.3s ease 0s;
-				
 				}
 			}
 		}
 	}
 }
 
-// .navbar ul li a:hover {
-// 	background-color: rgba(255, 255, 255, 0.15);
-// }
+.navbar ul li a:hover {
+	background-color: rgba(255, 255, 255, 0.15);
+}
 .navbar .navbar-toggler {
 	display: none;
 }
@@ -158,7 +154,6 @@ section {
 	}
 	.navbar ul li a {
 		min-width: 100px;
-		
 	}
 }
 
@@ -170,21 +165,101 @@ section {
 		width: 100%;
 		padding: 0;
 		background-color: rgba(0, 0, 0, 0.9);
-		/* height: auto; */
+		height: auto;
 		height: 100vh;
 		max-height: 0;
 		overflow: hidden;
 		transition: all ease-in-out 0.3s;
 	}
+
 	.navbar ul.open {
 		max-height: 100vh;
 	}
+
 	.navbar ul li {
 		width: 100%;
 	}
+
 	.navbar ul li a {
 		padding: 0;
 	}
+
+	.navbar .navbar-toggler {
+		display: block;
+		position: absolute;
+		height: 40px;
+		top: 20px;
+		right: 20px;
+		background-color: transparent;
+		color: #fff;
+		border: 3px solid #fff;
+		outline: none;
+		padding: 0 5px;
+		cursor: pointer;
+	}
+
+	.navbar .navbar-toggler span,
+	.navbar .navbar-toggler span::before,
+	.navbar .navbar-toggler span::after {
+		display: block;
+		content: "";
+		background-color: #fff;
+		height: 3px;
+		width: 28px;
+		border-radius: 4px;
+		transition: all ease-in-out 0.3s;
+	}
+
+	.navbar .navbar-toggler span::before {
+		transform: translateY(-8px);
+	}
+
+	.navbar .navbar-toggler span::after {
+		transform: translateY(5px);
+	}
+
+	.navbar .navbar-toggler.open-navbar-toggler span {
+		/* transform: rotate(90deg); */
+		background-color: transparent;
+		/* transform: scale(0.85) rotate(270deg); */
+	}
+
+	.navbar .navbar-toggler.open-navbar-toggler span::before {
+		transform: translateY(0px) rotate(45deg);
+		/* transform: translateY(0px) scale(0.75) rotate(45deg); */
+	}
+
+	.navbar .navbar-toggler.open-navbar-toggler span::after {
+		transform: translateY(-3px) rotate(-45deg);
+		/* transform: translateY(-3px) scale(0.75) rotate(-45deg); */
+	}
+}
+
+@media (max-width: 375px) {
+	.navbar .navbar-brand span {
+		font-size: 0.7rem;
+	}
+	.navbar ul {
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.9);
+		height: 100vh;
+		max-height: 0;
+		overflow: hidden;
+		transition: all ease-in-out 0.3s;
+	}
+
+	.navbar ul.open {
+		max-height: 100vh;
+	}
+
+	.navbar ul li {
+		width: 100%;
+	}
+
+	.navbar ul li a {
+		padding: 0;
+	}
+
 	.navbar .navbar-toggler {
 		display: block;
 		position: absolute;
