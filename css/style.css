@@ -118,12 +118,19 @@ section img {
 }
 
 .navbar ul li a {
-  position: relative;
-  margin: 1.4rem;
+  display: block;
+  text-align: center;
+  margin-right: 5rem;
+  justify-content: space-between;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 .navbar ul li a:hover {
   color: gray;
+  transition: ease-in-out 0.8s;
 }
 
 .navbar .navbar-toggler {
@@ -132,10 +139,10 @@ section img {
 
 @media (max-width: 900px) {
   .navbar ul {
-    padding: 0;
+    margin-right: 0.5rem;
   }
   .navbar ul li a {
-    min-width: 100px;
+    margin-right: 0.5rem;
   }
 }
 
@@ -145,9 +152,7 @@ section img {
   }
   .navbar ul {
     width: 100%;
-    padding: 0;
     background-color: rgba(0, 0, 0, 0.9);
-    height: auto;
     height: 100vh;
     max-height: 0;
     overflow: hidden;

@@ -2,11 +2,16 @@
 let splash = document.querySelector('.splash');
 let splashHeader = document.querySelector('.splash-header');
 let headerText = document.querySelectorAll('.header-text');
+let navbar = document.querySelectorAll('.navbar');
+
+
+navbar[0].classList.add('hidden');
 
 window.addEventListener('DOMContentLoaded', () => {
 
     setTimeout(() => {
         
+
         headerText.forEach((span, idx) => {
             setTimeout(() => {
                 span.classList.add('active');
@@ -14,20 +19,30 @@ window.addEventListener('DOMContentLoaded', () => {
         });
 
         setTimeout(() => {
+            
+        })
+
+        setTimeout(() => {
             headerText.forEach((span, idx) => {
-                
+    
                 setTimeout(() => {
                     span.classList.remove('active');
                     span.classList.add('fade');
                 }, (idx + 1) * 100)
             })
         }, 3000)
+        
+        setTimeout(() => {
+            splash.style.right = '-100%';
+        }, 4300);
 
         setTimeout(() => {
-            splash.style.right = '-100%'
+            navbar[0].classList.remove('hidden');
         }, 4300)
     })
 });
+
+
 
 const navbarToggler = document.querySelector(".navbar-toggler");
 const navbarMenu = document.querySelector(".navbar ul");
