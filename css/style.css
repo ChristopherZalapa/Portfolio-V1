@@ -87,6 +87,10 @@ section img {
   z-index: 10;
 }
 
+.navbar.hidden {
+  visibility: hidden;
+}
+
 .navbar a {
   text-decoration: none;
   color: #fff;
@@ -122,10 +126,6 @@ section img {
   text-align: center;
   margin-right: 5rem;
   justify-content: space-between;
-}
-
-.hidden {
-  visibility: hidden;
 }
 
 .navbar ul li a:hover {

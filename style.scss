@@ -91,6 +91,10 @@ section {
 	left: 0;
 	z-index: 10;
 
+	&.hidden {
+		visibility: hidden;
+	}
+
 	a {
 		text-decoration: none;
 		color: #fff;
@@ -125,22 +129,20 @@ section {
 				text-align: center;
 				margin-right: 5rem;
 				justify-content: space-between;
+
+				&:hover {
+					color: gray;
+					transition: ease-in-out 0.8s;
+				}
 			}
 		}
 	}
+
+	& .navbar-toggler {
+		display: none;
+	}
 }
 
-.hidden {
-	visibility: hidden;
-}
-
-.navbar ul li a:hover {
-	color: gray;
-	transition: ease-in-out 0.8s;
-}
-.navbar .navbar-toggler {
-	display: none;
-}
 
 // Responsive Media Queries
 @media (max-width: 900px) {
