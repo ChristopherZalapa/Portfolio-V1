@@ -188,6 +188,7 @@ body {
 		height: 350px;
 		border-radius: 3px;
 		width: 500px;
+		margin-bottom: 1rem;
 	}
 
 	& .social-list {
@@ -202,14 +203,16 @@ body {
 
 	& .social-link {
 		color: #fff;
-		font-size: 1.3rem;
+		font-size: 1.8rem;
 		margin-left: 1rem;
 		text-decoration: none;
 		opacity: 0.8;
+		
 
 		&:hover,
 		:focus {
 			opacity: 1;
+			transition: ease-in 0.3s;
 		}
 	}
 
@@ -307,7 +310,7 @@ body {
 	}
 }
 
-@media (max-width: 830px) {
+@media (max-width: 830px) {	
 	.navbar {
 		padding: 0;
 	}
