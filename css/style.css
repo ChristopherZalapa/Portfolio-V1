@@ -61,7 +61,7 @@ body {
 }
 
 .navbar {
-  background-color: transparent;
+  background-color: #000;
   color: #fff;
   width: 100%;
   height: 80px;
@@ -134,15 +134,37 @@ body {
   height: 100vh;
 }
 
-.header-project {
-  font-size: 3rem;
+.home .home-info {
   letter-spacing: 3px;
+  font-size: 2rem;
   font-weight: 200;
+}
+
+.home .home-links {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.7rem;
+  width: 300px;
+  margin-top: 1.3rem;
+}
+
+.home .home-link {
+  opacity: 0.7;
+  color: #fff;
+}
+
+.home .home-link:hover, .home .home-link :focus {
+  opacity: 1;
+}
+
+.header-project {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: fit-content;
-  margin-top: 80px;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  font-weight: 200;
+  line-height: 200px;
 }
 
 .projects {
@@ -191,20 +213,20 @@ body {
 }
 
 .projects .project-name::after {
-  content: '';
+  content: "";
   display: block;
   height: 1px;
   width: 90%;
-  margin: .5rem;
+  margin: 0.5rem;
   margin-left: 1.4rem;
   background: #fff;
-  opacity: .60;
+  opacity: 0.6;
 }
 
 .projects .project-stack {
   margin: 0;
   letter-spacing: 2px;
-  font-size: .875rem;
+  font-size: 0.875rem;
   font-weight: lighter;
 }
 
