@@ -90,7 +90,6 @@ body {
 			height: inherit;
 			line-height: inherit;
 			padding: 0 30px;
-
 			font-weight: lighter;
 			letter-spacing: 2px;
 
@@ -129,20 +128,35 @@ body {
 	}
 }
 
-.header-project {
-	display: block;
+.home {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	text-align: center;
+	margin: auto;
+	height: 100vh;
+
+}
+
+.header-project {
+	// background: tan;
 	font-size: 3rem;
-	margin: 1rem;
-	letter-spacing: 2px;
+	letter-spacing: 3px;
+	font-weight: 200;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: fit-content;
+	margin-top: 80px;
 }
 
 .projects {
 	display: flex;
 	justify-content: center;
-	// align-items: center;
 	flex-direction: row;
 	width: 100%;
+	height: 50vh;
 	text-align: center;
 	padding: 2rem;
 	// background-color: salmon;
@@ -214,7 +228,7 @@ body {
 
 
 // Responsive Media Queries
-@media (max-width: 900px) {
+@media (max-width: 980px) {
 	.navbar ul {
 		margin-right: 0.5rem;
 		padding: 0;
