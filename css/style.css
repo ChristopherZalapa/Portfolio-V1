@@ -124,30 +124,30 @@ body {
   display: none;
 }
 
-.projects {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  text-align: center;
-  padding: 2rem;
-  background-color: salmon;
-}
-
-.projects .header-project {
+.header-project {
+  display: block;
   text-align: center;
   font-size: 3rem;
   margin: 1rem;
   letter-spacing: 2px;
 }
 
-.project-image {
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+}
+
+.projects .project-image {
   height: 350px;
   border-radius: 3px;
   width: auto;
 }
 
-.social-list {
+.projects .social-list {
   display: flex;
   justify-content: space-around;
   list-style: none;
@@ -157,7 +157,7 @@ body {
   width: 125px;
 }
 
-.social-link {
+.projects .social-link {
   color: #fff;
   font-size: 1.3rem;
   margin-left: 1rem;
@@ -165,31 +165,40 @@ body {
   opacity: 0.8;
 }
 
-.social-link:hover,
-.social-link:focus {
+.projects .social-link:hover,
+.projects .social-link :focus {
   opacity: 1;
 }
 
-.project-name {
+.projects .project-name {
   font-size: 2rem;
   line-height: 1.5;
   letter-spacing: 1px;
 }
 
-.project-name::after {
+.projects .project-name::after {
   content: '';
   display: block;
   height: 1px;
-  width: 100%;
-  margin: 0.2em auto;
+  width: 90%;
+  margin: .5rem;
+  margin-left: 1.4rem;
   background: #fff;
+  opacity: .60;
 }
 
-.project-stack {
+.projects .project-stack {
   margin: 0;
   letter-spacing: 2px;
   font-size: .875rem;
   font-weight: lighter;
+}
+
+.projects .project-info {
+  width: 300px;
+  font-weight: 300;
+  margin-left: 3em;
+  margin-bottom: 0;
 }
 
 @media (max-width: 900px) {

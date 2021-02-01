@@ -129,76 +129,88 @@ body {
 	}
 }
 
+.header-project {
+	display: block;
+	text-align: center;
+	font-size: 3rem;
+	margin: 1rem;
+	letter-spacing: 2px;
+}
+
 .projects {
 	display: flex;
 	justify-content: center;
-	flex-direction: column;
+	// align-items: center;
+	flex-direction: row;
 	width: 100%;
-	// max-width: 600px;
 	text-align: center;
 	padding: 2rem;
-	background-color: salmon;
+	// background-color: salmon;
 
-	& .header-project {
-		text-align: center;
-		font-size: 3rem;
-		margin: 1rem;
+	& .project-image {
+		height: 350px;
+		border-radius: 3px;
+		width: auto;
+	}
+	
+	& .social-list {
+		display: flex;
+		justify-content: space-around;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		margin: 0 auto;
+		width: 125px;
+	}
+	
+	& .social-link {
+		color: #fff;
+		font-size: 1.3rem;
+		margin-left: 1rem;
+		text-decoration: none;
+		opacity: 0.8;
+		
+		&:hover,
+		:focus {
+			opacity: 1;
+		}
+	}
+	
+	& .project-name {
+		font-size: 2rem;
+		line-height: 1.5;
+		letter-spacing: 1px;
+		
+		&::after {
+			content: '';
+			display: block;
+			height: 1px;
+			width: 90%;
+			margin: .5rem;
+			margin-left: 1.4rem;
+			background: #fff;
+			opacity: .60;
+		}
+	}
+	
+	& .project-stack {
+		margin: 0;
 		letter-spacing: 2px;
+		font-size: .875rem;
+		font-weight: lighter;
+	}
+	
+	& .project-info {
+		width: 300px;
+		font-weight: 300;
+		margin-left: 3em;
+		margin-bottom: 0;
 	}
 }
 
 
 
-.project-image {
-	height: 350px;
-	border-radius: 3px;
-	width: auto;
-}
 
-.social-list {
-	display: flex;
-	justify-content: space-around;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	margin: 0 auto;
-	width: 125px;
-}
-
-.social-link {
-	color: #fff;
-	font-size: 1.3rem;
-	margin-left: 1rem;
-	text-decoration: none;
-	opacity: 0.8;
-}
-
-.social-link:hover,
-.social-link:focus {
-	opacity: 1;
-}
-
-.project-name {
-	font-size: 2rem;
-	line-height: 1.5;
-	letter-spacing: 1px;
-}
-
-.project-name::after {
-	content: '';
-	display: block;
-	height: 1px;
-	width: 100%;
-	margin: 0.2em auto ;
-	background: #fff;
-}
-
-.project-stack {
-	margin: 0;
-	letter-spacing: 2px;
-	font-size: .875rem;
-	font-weight: lighter;
-}
 
 
 // Responsive Media Queries
