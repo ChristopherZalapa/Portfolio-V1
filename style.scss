@@ -245,6 +245,30 @@ body {
 	}
 }
 
+.about {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100vh;
+	flex-direction: column;
+
+	& .about-info {
+		width: 800px;
+
+		h1 {
+			letter-spacing: 3px;
+			font-size: 4rem;
+			font-weight: 200;
+		}
+		
+		p {
+			font-size: 1.5rem;
+			font-weight: 200;
+		}
+	}
+}
+
 // Responsive Media Queries
 @media (max-width: 980px) {
 	.navbar ul {
