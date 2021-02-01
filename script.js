@@ -5,7 +5,7 @@ let headerText = document.querySelectorAll('.header-text');
 let navbar = document.querySelectorAll('.navbar');
 
 
-// navbar[0].classList.add('hidden');
+navbar[0].classList.add('hidden');
 
 window.addEventListener('DOMContentLoaded', () => {
 

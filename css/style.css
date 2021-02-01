@@ -153,8 +153,10 @@ body {
   color: #fff;
 }
 
-.home .home-link:hover, .home .home-link :focus {
+.home .home-link:hover,
+.home .home-link :focus {
   opacity: 1;
+  transition: ease-in 0.3s;
 }
 
 .header-project {
@@ -261,6 +263,30 @@ body {
 .about .about-info p {
   font-size: 1.5rem;
   font-weight: 200;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-size: 2rem;
+}
+
+.contact .contact-link {
+  margin-top: 1rem;
+  margin-right: 2rem;
+  font-size: 2.3rem;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.contact .contact-link:hover,
+.contact .contact-link :focus {
+  opacity: 1;
+  transition: ease-in 0.3s;
 }
 
 @media (max-width: 980px) {
