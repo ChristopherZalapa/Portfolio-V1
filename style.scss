@@ -141,8 +141,9 @@ body {
 
 	& .header-project {
 		text-align: center;
-		border-bottom: solid 1px;
+		font-size: 3rem;
 		margin: 1rem;
+		letter-spacing: 2px;
 	}
 }
 
@@ -150,6 +151,7 @@ body {
 
 .project-image {
 	height: 350px;
+	border-radius: 3px;
 	width: auto;
 }
 
@@ -165,8 +167,39 @@ body {
 
 .social-link {
 	color: #fff;
+	font-size: 1.3rem;
+	margin-left: 1rem;
 	text-decoration: none;
+	opacity: 0.8;
 }
+
+.social-link:hover,
+.social-link:focus {
+	opacity: 1;
+}
+
+.project-name {
+	font-size: 2rem;
+	line-height: 1.5;
+	letter-spacing: 1px;
+}
+
+.project-name::after {
+	content: '';
+	display: block;
+	height: 1px;
+	width: 100%;
+	margin: 0.2em auto ;
+	background: #fff;
+}
+
+.project-stack {
+	margin: 0;
+	letter-spacing: 2px;
+	font-size: .875rem;
+	font-weight: lighter;
+}
+
 
 // Responsive Media Queries
 @media (max-width: 900px) {
