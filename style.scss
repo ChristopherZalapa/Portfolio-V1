@@ -185,7 +185,7 @@ body {
 	& .project-image {
 		height: 350px;
 		border-radius: 3px;
-		width: auto;
+		width: 500px;
 	}
 
 	& .social-list {
@@ -212,6 +212,7 @@ body {
 	}
 
 	& .project-name {
+		margin-left: 1rem;
 		font-size: 2rem;
 		line-height: 1.5;
 		letter-spacing: 1px;
@@ -230,6 +231,7 @@ body {
 
 	& .project-stack {
 		margin: 0;
+		margin-left: 1rem;
 		letter-spacing: 2px;
 		font-size: 0.875rem;
 		font-weight: lighter;
