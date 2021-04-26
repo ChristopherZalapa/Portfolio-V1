@@ -361,6 +361,8 @@ body {
   .projects .project-image {
     height: 250px;
     width: 375px; }
+  div .projects {
+    padding: 0; }
   .about .about-info {
     width: auto; }
   .about .about-info h1 {
@@ -431,6 +433,8 @@ body {
   .projects .project-image {
     height: 250px;
     width: 375px; }
+  .projects .project-info {
+    margin: 3em; }
   .about .about-info {
     width: auto; }
   .about .about-info h1 {
@@ -440,6 +444,6 @@ body {
   .contact h1 {
     font-size: 1.7rem; }
   .links {
-    width: 40%; }
+    width: 35%; }
     .links i {
-      font-size: 2rem; } }
+      font-size: 1.8rem; } }

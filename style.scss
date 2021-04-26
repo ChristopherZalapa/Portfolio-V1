@@ -521,6 +521,10 @@ body {
 		width: 375px;
 	}
 
+	div .projects {
+		padding: 0;
+	}
+
 	.about .about-info {
 		width: auto;
 	}
@@ -624,6 +628,9 @@ body {
 		width: 375px;
 	}
 
+	.projects .project-info {
+		margin: 3em;
+	}
 	.about .about-info {
 		width: auto;
 	}
@@ -642,9 +649,9 @@ body {
 	}
 
 	.links {
-		width: 40%;
+		width: 35%;
 		i {
-			font-size: 2rem;
+			font-size: 1.8rem;
 		}
 	}
 
