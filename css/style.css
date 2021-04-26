@@ -302,13 +302,12 @@ body {
 } */
 
 @media (max-width: 390px) {
-  .home-info h1 {
-    font-size: 1.5rem;
-  }
-
-  .home-info p {
-    font-size: 1.5rem;
-  }
+	.home .home-info h1,
+	p {
+		letter-spacing: 3px;
+		font-size: 2rem;
+		font-weight: 200;
+	}
 }
 
 @media (max-width: 830px) {
