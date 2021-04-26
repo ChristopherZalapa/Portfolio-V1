@@ -301,7 +301,7 @@ body {
     .links i {
       font-size: 2rem; } }
 
-@media (max-width: 830px) {
+@media (max-width: 983px) {
   .navbar {
     padding: 0; }
   .navbar ul {
@@ -352,6 +352,21 @@ body {
   .navbar .navbar-toggler.open-navbar-toggler span::after {
     transform: translateY(-3px) rotate(-45deg); }
   .home-info h1 {
-    font-size: 2rem; }
+    font-size: 1.5rem; }
   .home-info p {
-    font-size: 2rem; } }
+    font-size: 1.1rem; }
+  .projects .project-image {
+    height: 250px;
+    width: 375px; }
+  .about .about-info {
+    width: auto; }
+  .about .about-info h1 {
+    font-size: 1.7rem; }
+  .about .about-info p {
+    font-size: 1.1rem; }
+  .contact h1 {
+    font-size: 1.7rem; }
+  .links {
+    width: 40%; }
+    .links i {
+      font-size: 2rem; } }
