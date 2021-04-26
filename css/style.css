@@ -120,6 +120,8 @@ body {
       transition: ease-in 0.3s; }
 
 @media (max-width: 390px) {
+  .navbar ul li {
+    width: 125%; }
   .home-info h1 {
     font-size: 1.5rem; }
   .home-info p {
@@ -139,7 +141,7 @@ body {
   .navbar ul.open {
     max-height: 100vh; }
   .navbar ul li {
-    width: 125%; }
+    width: 100%; }
   .navbar ul li a {
     padding: 0; }
   .navbar .navbar-toggler {
