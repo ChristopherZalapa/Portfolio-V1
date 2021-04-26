@@ -105,7 +105,8 @@ body {
     letter-spacing: 3px;
     font-weight: 200; }
     .home .home-info h1 {
-      font-size: 2rem; }
+      font-size: 2rem;
+      color: red; }
     .home .home-info p {
       font-size: 2rem; }
   .home .home-links {
