@@ -101,6 +101,10 @@ body {
   text-align: center;
   margin: auto;
   height: 100vh; }
+  .home .home-info {
+    letter-spacing: 3px;
+    font-size: 2rem;
+    font-weight: 200; }
   .home .home-links {
     display: flex;
     justify-content: space-around;
@@ -135,7 +139,7 @@ body {
   .navbar ul.open {
     max-height: 100vh; }
   .navbar ul li {
-    width: 100%; }
+    width: 125%; }
   .navbar ul li a {
     padding: 0; }
   .navbar .navbar-toggler {

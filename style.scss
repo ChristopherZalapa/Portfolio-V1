@@ -137,6 +137,11 @@ body {
 	margin: auto;
 	height: 100vh;
 	
+	& .home-info {
+		letter-spacing: 3px;
+		font-size: 2rem;
+		font-weight: 200;
+	}
 
 	& .home-links {
 		display: flex;
@@ -319,9 +324,10 @@ body {
 	}
 	.navbar ul.open {
 		max-height: 100vh;
+		
 	}
 	.navbar ul li {
-		width: 100%;
+		width: 125%;
 	}
 	.navbar ul li a {
 		padding: 0;
