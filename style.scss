@@ -294,4 +294,12 @@ body {
 
 // Responsive Media Queries
 @media (max-width: 390px) {
+	.home-info h1 {
+		font-size: 1.2rem;
+		color: red;
+	}
+
+	.home-info p {
+		font-size: 1.5rem;
+	}
 }
