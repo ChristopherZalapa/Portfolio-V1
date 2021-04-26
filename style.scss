@@ -142,8 +142,7 @@ body {
 		font-weight: 200;
 		
 		h1 {
-			font-size: 2rem;
-			color: red;
+			font-size: 4rem;
 		}
 
 		p {
@@ -442,5 +441,14 @@ body {
 	}
 	.navbar .navbar-toggler.open-navbar-toggler span::after {
 		transform: translateY(-3px) rotate(-45deg);
+	}
+
+	.home-info h1 {
+		font-size: 2rem;
+		
+	}
+
+	.home-info p {
+		font-size: 2rem;
 	}
 }
